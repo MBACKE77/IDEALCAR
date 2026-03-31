@@ -1,0 +1,385 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Couleur de fond douce */
+    color: #333; /* Couleur principale du texte */
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background-color: #ff00aa; /* Couleur vive pour l'en-tête */
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+/* Section Nos Produits */
+
+
+.products h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #ff00aa; /* Couleur du titre */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.product {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Agrandit légèrement au survol */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    color: #2c3e50; /* Couleur du titre des produits */
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1.2em;
+    color: #777; /* Couleur des prix */
+    margin-bottom: 15px;
+}
+
+.buy-button {
+    background-color: #ff66cc; /* Couleur rose extraite */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #e055aa; /* Rose plus foncé pour le survol */
+}
+
+
+.products h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff66cc; /* Couleur rose extraite */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.buy-button:hover {
+    background-color: #e60099; /* Couleur au survol */
+}
+
+/* Section Contact */
+.contact {
+    padding: 40px 20px;
+    background-color: #f0f8ff; /* Couleur douce pour la section contact */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact button {
+    background-color: #ff00aa;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #e60099;
+}
+
+/* Pied de page */
+footer {
+    background-color: lch(0.82% 0 296.81); /* Couleur rose plus foncé */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .products {
+        padding: 20px;
+    }
+
+    .product {
+        margin-bottom: 15px;
+    }
+
+    .contact {
+        padding: 20px;
+    }
+    .small-photo {
+        width: 100px; /* Largeur de l'image */
+        height: auto; /* Conserve les proportions */
+        border-radius: 10px; /* Coins arrondis */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre douce */
+    }
+    .product {
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide */
+    }
+    
+    .product:hover {
+        transform: scale(1.05); /* Agrandit légèrement le produit */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Accentue l'ombre */
+    }
+    
+    .product img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease; /* Animation fluide pour l'image */
+    }
+    
+    .product img:hover {
+        transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+    }
+    .buy-button {
+        background-color: #ff00aa; /* Couleur vive */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        animation: pulse 1.5s infinite; /* Animation de pulsation */
+    }
+    
+    .buy-button:hover {
+        background-color: #f58bd2; /* Couleur au survol */
+        transform: scale(1.1); /* Agrandit légèrement le bouton */
+    }
+    
+    /* Animation de pulsation */
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .products h2 {
+        text-align: center;
+        font-size: 2.5em;
+        color: #ff00aa;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        animation: fadeIn 2s ease-in-out; /* Animation d'apparition */
+    }
+    
+    /* Animation d'apparition */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+}
+input[type="submit"] {
+    background-color: #ff99dd; /* Couleur rose extraite */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ed9dce; /* Rose plus foncé au survol */
+}
+
+/* Effet au survol */
+input[type="submit"]:hover {
+    background-color: #ffaa; /* Rose plus foncé au survol */
+}
+.product img {
+    width: 100%; /* L'image occupe toute la largeur disponible */
+    max-width: 200px; /* Limite la largeur maximale des images */
+    height: auto; /* Conserve les proportions de l'image */
+    display: block; /* Assure que l'image est un bloc */
+    margin: 0 auto 10px; /* Centre l'image horizontalement et ajoute un espace en bas */
+    border-radius: 10px; /* Ajoute des coins arrondis */
+}
+.small-photo {
+    width: 100px; /* Largeur de l'image */
+    height: auto; /* Conserve les proportions */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre douce */
+    display: block; /* Assure que l'image est un bloc */
+    margin: 10px auto; /* Centre l'image horizontalement et ajoute un espace en haut et en bas */
+}
+.small-photo {
+    width: 100px; /* Largeur de l'image */
+    height: auto; /* Conserve les proportions */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre douce */
+    display: block; /* Assure que l'image est un bloc */
+    margin: 10px auto; /* Centre l'image horizontalement et ajoute un espace en haut et en bas */
+}
+.header-banner {
+    background-image: url('WhatsApp Image 2025-04-21 à 16.36.16_f3ce9e03.jpg'); /* Remplacez par le chemin correct */
+    background-size: cover; /* L'image couvre tout l'en-tête */
+    background-repeat: no-repeat; /* Pas de répétition de l'image */
+    background-position: center; /* Centre l'image */
+    height: 300px; /* Hauteur de l'en-tête */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement le texte */
+    align-items: center; /* Centre horizontalement le texte */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Centre le texte */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre douce */
+}
+.top-right-image {
+    position: absolute; /* Positionne l'image par rapport à la page */
+    top: 10px; /* Distance depuis le haut de la page */
+    right: 10px; /* Distance depuis la droite de la page */
+    width: 200px; /* Augmente la largeur de l'image */
+    height: auto; /* Conserve les proportions de l'image */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre douce */
+}
+.left-image {
+    position: absolute; /* Positionne l'image par rapport à la page */
+    top: 10px; /* Distance depuis le haut de la page */
+    left: 10px; /* Distance depuis la gauche de la page */
+    width: 250px; /* Largeur de l'image (même que .right-image) */
+    height: auto; /* Conserve les proportions de l'image */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre douce */
+}
+.right-image {
+    position: absolute; /* Positionne l'image par rapport à la page */
+    top: 10px; /* Distance depuis le haut de la page */
+    right: 10px; /* Distance depuis la droite de la page */
+    width: 250px; /* Largeur de l'image */
+    height: auto; /* Conserve les proportions de l'image */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre douce */
+}
+.special-photo {
+    background: linear-gradient(135deg, #ffe0f7 0%, #fff 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(255,0,170,0.1);
+    padding: 30px 20px;
+    margin: 40px auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+.special-photo img {
+    max-width: 250px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.special-photo h2 {
+    color: #ff00aa;
+    margin-bottom: 10px;
+}
+/* Alignement horizontal des photos de l'équipe */
+.new-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-photo-images {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.new-photo img {
+    max-width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}

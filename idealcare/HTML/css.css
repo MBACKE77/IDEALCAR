@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux images de passer à la ligne si nécessaire */
+    justify-content: center; /* Centre les images horizontalement */
+    gap: 15px; /* Espacement entre les images */
+    margin: 20px 0;
+}
+
+/* Images de la galerie */
+.gallery-img {
+    width: 100px; /* Taille réduite des images */
+    height: auto; /* Maintient les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+    transition: transform 0.3s ease; /* Animation au survol */
+}
+/* Effet au survol */
+.gallery-img:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+}
